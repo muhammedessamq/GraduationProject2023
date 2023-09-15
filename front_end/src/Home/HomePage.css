@@ -1,0 +1,160 @@
+
+.HomeMain {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: rgba(199, 210, 202, 0.22);
+  color: transparent;
+  height: 90px;
+  padding: 20px 25px;
+  gap: 1rem;
+  box-sizing: border-box;
+  border-top:5px solid rgb(5, 72, 46);
+
+}
+.left-nav{
+  padding: 20px;
+  margin: 20px;
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+}
+.right-nav{
+  padding: 20px;
+  margin: 20px;
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  position: absolute;
+  right: 5px;
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+
+
+.transparent-button {
+  background-color: transparent;
+  border: 0.3px solid rgba(5, 72, 46, 0.266);
+  border-radius: 15px;
+  color: #1a4d2e;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 5px 39px;
+  cursor: pointer;
+
+}
+.transparent-buttonL {
+  background-color: transparent;
+  border: none;
+  color: #1a4d2e;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.transparent-button:hover {
+  color: #020000;
+  background-color: rgba(193, 232, 206, 0.5);
+
+}
+.transparent-buttonL:hover {
+  color: #020000;
+  background-color: rgba(193, 232, 206, 0.318);
+ border-radius: 15px;
+}
+
+.round-button {
+  border-radius: 20px;
+  padding: 7px 45px;
+  font-size: 15px;
+  background-color: #1a4d2e;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-top: 80px; /* Adjust the margin-top value as needed */
+}
+
+.image-container {
+  margin-right: 1rem;
+}
+
+.content-image {
+  width: 399px;
+
+}
+
+.text-container {
+  flex-grow: 1;
+}
+
+.content-paragraph {
+  font-size: 33px;
+  line-height: 50px;
+  font-family: 'Basic';
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90.79deg, #d95653 5.9%, #d75552 5.91%, #1a4d2e 82.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+}
+.about-us-paragraph {
+  background-color: rgba(199, 210, 202, 0.22);
+  padding: 25px;
+  border-radius: 120px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #1a4d2e;
+  transition: transform 0.1s ease-in-out, background-color 0.3s ease;
+  max-width: 94%;
+  right: 23px;
+  bottom: 12px;
+  position: absolute;
+  font-size: 17px;
+}
+
+.about-us-paragraph:hover {
+  background-color: rgba(199, 210, 202, 0.5);
+  transform: scale(1);
+}
+.about-us-paragraph span:hover {
+  transform: scale(1.1);
+}
+
+.about-us-inside {
+  background-color: white;
+  color: #1a4d2e;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 255.689px 0px 0px 255.689px;
+  margin-right: 10px;
+  width: 376.69px;
+  height: 180.9px;
+  left: 47.91px;
+  top: 654.06px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

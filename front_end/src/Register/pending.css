@@ -1,0 +1,57 @@
+.pending-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pending-container i {
+  font-size: 48px; /* Increase the font size */
+  color: #555;
+  animation: spin 1.5s linear infinite;
+}
+
+.pending-container .holkk {
+  margin-top: 20px;
+  font-size: 32px; /* Increase the font size */
+  color: #555;
+  animation: fadeInDown 1s ease-in-out; /* Add fadeInDown animation */
+}
+
+.pending-container .lpooooo {
+  margin-top: 10px;
+  font-size: 20px; /* Increase the font size */
+  animation: fadeInUp 1s ease-in-out; /* Add fadeInUp animation */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

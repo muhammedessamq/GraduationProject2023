@@ -1,0 +1,390 @@
+.All-Admin {
+  max-height: 100%;
+  height: 100px;
+}
+.admincontainerL {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: -41px;
+  left: 20px;
+}
+.admincontainer1L {
+  padding: 20px;
+  margin-top: 100px;
+  position: relative;
+  top: -73px;
+  background: white;
+  left: 30px;
+  width: 1439px;
+
+}
+.buttons-containerL {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+    right: 0px;
+}
+.b1 {
+  width: 80%;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  right: -92px;
+  bottom: -10px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 40px;
+  background-color: #930b0b;
+  color: white;
+}
+.b1-admin {
+  width: 80%;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  right: -506px;
+  bottom: -43px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 40px;
+  background-color: #930b0b;
+  color: white;
+}
+.button1 input {
+  width: 18%;
+  padding: 10px;
+  border: solid;
+  border-radius: 5px;
+  font-size: 16px;
+  right: -1025px;
+  position: relative;
+  top: -51px;
+}
+.b1:hover , .b:hover{
+  background-color: #f1f1f1;
+}
+.textngoL {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+}
+.type {
+  margin: -1px;
+  position: relative;
+  text-align: center;
+  right: -744px;
+  bottom: -28px;
+  font-size: 17px;
+  font-weight: lighter;
+  color: #fff;
+  width: 58px;
+  border-radius: 18px;
+  padding: 0px 18px;
+  background-color: #930b0b;
+}
+.text2L {
+  margin: 0;
+  font-size: 18px;
+  color: #666666;
+}
+.reqL:hover {
+  transform: translateY(-4px);
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  position: relative;
+}
+.accordion-content {
+  display: block;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.accordion.active .req-headerL img {
+  display: block;
+}
+
+.accordion.active:hover {
+  background-color: #66666619;
+}
+
+button.accordion.active {
+  display: block;
+  background-color: white;
+  color: grey;
+  text-align: center;
+  margin-top: -200px;
+  font-size: 15px;
+  border-style: none;
+  height: 434px;
+  overflow: auto;
+}
+
+.accordion.active .accordion-content {
+  border: 1px solid #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.accordion.active .accordion-content p {
+  text-align: center;
+}
+.req-headerL {
+  margin: 0;
+  text-align: initial;
+  margin-left: 100px;
+  margin-top: -21px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 200px;
+}
+
+.show {
+  display: block;
+}
+
+.approveL {
+  background-color: #1a4d2eeb;
+  bottom: 0px;
+  position: relative;
+  width: 106px;
+  border: none;
+  border-radius: 5px;
+  height: 27px;
+  color: white;
+  top: -43px;
+  right: -34px;
+  cursor: grabbing;
+}
+
+.rejectL {
+  background-color: #930b0be0;
+  bottom: 0px;
+  position: relative;
+  width: 106px;
+  border: none;
+  border-radius: 5px;
+  height: 27px;
+  color: white;
+  top: -43px;
+  cursor: grabbing;
+  right: -76px;
+}
+
+.textL.type {
+  text-align: center;
+  top: -20px;
+  border: #777;
+  border-style: dashed;
+}
+
+.paginationL {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  left: -20px;
+  position: relative;
+  bottom: -316px;
+}
+.page-buttonL {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.expanded-cardL {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  height: 157px;
+}
+.show-cardL {
+  max-height: 1000px;
+  transition: max-height 0.3s ease;
+}
+.req-headerL img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border: solid aqua;
+  border-radius: 15px;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  top: 3px;
+  display: none; /* Show the image when the accordion is active */
+  z-index: -1; /* Add a higher z-index to bring the image above the content */
+  position: relative;
+}
+.accordion.active {
+  position: relative;
+  background-color: #1a4d2e;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 0 50px 50px 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  top: 60px;
+  display: block;
+  font-size: 15px;
+  color: #ffffff;
+  z-index: 1; /* Add a higher z-index to bring the active accordion above other elements */
+}
+
+.accordion.active .highlight-text::after {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 10px;
+  height: 100%;
+  background-color: #1a4d2e;
+  border-radius: 0 50% 50% 0;
+  font-size: 10px;
+}
+.button1 {
+  flex-basis: 30%;
+}
+.b {
+  width: 70%;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 9px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 40px;
+  background-color: #930b0b;
+  color: white;
+}
+.textL {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+}
+.text2L {
+  margin: 0;
+  font-size: 18px;
+  color: #666666;
+}
+.reqL-buttons-containerL {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+  width: 81%;
+  right: -80px;
+}
+.reqL:hover {
+  transform: translateY(-4px);
+}
+.button1-ngoList {
+  flex-basis: 30%;
+}
+
+button.accordion:hover {
+  background-color: #66666619;
+}
+.panel {
+  display: none;
+  padding: 10px;
+}
+
+.reqL-buttons-containerL.expanded {
+  height: auto;
+  max-height: 500px; /* Set the maximum height you want for the expanded card */
+  overflow-y: auto;
+}
+
+.req-actionsL {
+  position: absolute;
+  bottom: 0;
+  left: 20px; /* Adjust the left position as per your desired gap */
+}
+.textL.type {
+  text-align: center;
+  top: -20px;
+  border: #777;
+  border-style: dashed;
+}
+.page-buttonL:hover {
+  background-color: #f1f1f1;
+}
+.page-buttonL.active-pageL {
+  background-color: #4caf50;
+  color: #ffffff;
+  border-color: #4caf50;
+}
+.page-buttonL:disabled {
+  cursor: not-allowed;
+}
+.expanded-cardL {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  height: 157px;
+}
+.highlight-text {
+  position: relative;
+  background-color: #1a4d2ed4;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 0 50px 50px 0;
+  padding-left: 10px;
+  top: 60px;
+  font-size: 15px;
+  color: #ffffff;
+  left: -56px;
+  top: 179px;
+}
+
+
+.no-requests-message{
+  position: relative;
+  bottom: -171px;
+  font-size: 22px;
+  border: 2px solid black;
+  padding: 10px 38px;
+  border-radius: 91px;
+  border-block-style: initial;
+  border-color: #d64e4b;
+  font-style: italic;
+  font-family: sans-serif;
+  width: 458px;
+  text-align: center;
+  right: -317px;}
+
+  .All-Admin .image-container {
+    position: relative;
+    right: -431px;
+    overflow: hidden;
+  }
+  .All-Admin .image-container:hover .img {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }

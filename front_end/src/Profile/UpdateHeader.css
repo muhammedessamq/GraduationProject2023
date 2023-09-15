@@ -1,0 +1,252 @@
+
+
+/* Rectangle Styles */
+.rectangle-afterNavUpdate {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 72%;
+    margin: 22px auto;
+    padding: 13px;
+    background-color: #dad9d938;
+    border-radius: 8px;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.headerForRectangle {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    width: 101.6%;
+    color: #ffffff;
+    margin-top: -1.7%;
+    background-color: #1A4D2E;
+    padding: 8px;
+    font-size: 24px;
+    /* margin-bottom: 0; */
+    font-weight: 400;
+    animation: slide-in-top 0.5s ease-in-out;
+}
+
+.table-with-form-insideRectangle {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.tables-inside-rectangle {
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: 44%; */
+  text-align: center;
+  /* border-collapse: separate; */
+  border-spacing: 0;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 17px;
+  background-color: #fff;
+  animation: slide-in-bottom 0.5s ease-in-out;
+}
+
+.tables-inside-rectangle .updateHeader-in-each-table,
+.tables-inside-rectangle .updateDetails-in-each-row-in-table {
+  padding: 10px;
+}
+
+.tables-inside-rectangle .updateHeader-in-each-table:first-child,
+.tables-inside-rectangle .updateDetails-in-each-row-in-table:first-child {
+  width: 70%;
+}
+
+.tables-inside-rectangle .updateHeader-in-each-table:last-child,
+.tables-inside-rectangle .updateDetails-in-each-row-in-table:last-child {
+  width: 30%;
+}
+
+.table-row-content-inside-rectangle {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-button-insideTablesOfTheRectangle {
+  color: #000;
+    background: none;
+    font-size: 19px;
+    position: relative;
+    right: 133px;
+    border-radius: 9px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-i;
+}
+
+.delete-button-insideTablesOfTheRectangle:hover {
+  background-color: #cc000017;
+  padding: 5px 15px; 
+  margin-left: -5px; 
+  margin-right: -5px; 
+}
+
+.update-button-password-inside-rectangle {
+  color: #000;
+  border: none;
+  border-radius: 9px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  right: 130px;
+  background: none;
+  font-size: 18px;
+}
+
+.update-button-password-inside-rectangle:hover {
+  background-color: #0057b354;
+}
+
+.passVal{
+  width: 359px;
+  height: 24px;
+  border-radius: 5px;
+  position: relative;
+  right: 5px;
+}
+
+.add-form-inside-rectangle-2 {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  animation: slide-in-bottom 0.5s ease-in-out;
+}
+
+.add-form-inside-rectangle-2 .input-inside-Rectangle[type="text"]
+{
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.add-form-inside-rectangle-2 .input-inside-Rectangle[type="password"] {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+
+}
+.add-form-inside-rectangle-2 .specified-for-add-button-notshown[type="submit"] {
+  background-color: #afafaf;
+  width: 20%;
+  border-radius: 10px;
+  color: #afafaf;
+  border: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-form-inside-rectangle {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  animation: slide-in-bottom 0.5s ease-in-out;
+}
+
+
+.add-form-inside-rectangle .input-inside-Rectangle[type="text"]
+{
+  padding: 5px;
+    margin-right: 202px;
+    border-radius: 5px;
+    width: 350px;
+    position: relative;
+    right: -164px;
+}
+
+.add-form-inside-rectangle .input-inside-Rectangle[type="password"] {
+  padding: 5px;
+  /* margin-right: 276px; */
+  border-radius: 5px;
+  width: 350px;
+  position: relative;
+  right: -9px;
+
+}
+.password-content {
+  margin-right: 50%;
+}
+
+.add-form-inside-rectangle .specified-for-add-button[type="submit"] {
+  background-color: #1A4D2E;
+  width: 20%;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  right: -33px;
+}
+
+.add-form-inside-rectangle .specified-for-add-button[type="submit"]:hover {
+  background-color: #13371f;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+.check-button-atLast {
+  background-color: #1A4D2E;
+  color: #fff;
+  /* width: 30%; */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.check-button-atLast:hover {
+  background-color: #13371f;
+}
+
+/* Animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

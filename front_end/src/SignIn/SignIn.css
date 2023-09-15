@@ -1,0 +1,232 @@
+.LoginCreation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+}
+.logos-image {
+  max-width: 265px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+/* h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  padding-top: 30px;
+  color: #96ddb2;
+  } */
+.sort-container {
+  margin-top: 150px;
+  width: 100%;
+  max-width: 500px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.about-all{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 700;
+  color: #96ddb2;
+  line-height: 1.2;
+  padding-top: 30px;
+}
+.SignInTxt{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 47px;
+  font-weight: 700;
+  
+  line-height: 0.2;
+  padding-top: -4px;
+  position: relative;
+  text-align: left;
+  left: -252px;
+  top: 15px;
+  color: #1A4D2E;
+
+}
+.welcome-Back{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 0.2;
+  padding-bottom: 12px;
+  position: relative;
+  text-align: left;
+  left: -145px;
+  color: #1A4D2E;
+  bottom: -40px;
+}
+.passwordCheck-label {
+  max-width: 100%;
+}
+.usersname-label{
+  max-width: 99.6%;
+}
+.passwordd-container {
+  display: flex;
+  align-items: center;
+}
+
+.passwordd-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+
+.about-signIn {
+  display: none;
+  font-size: 32px;
+  color: #96ddb2;
+  /* margin-top: 150px; */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-top: 30px;
+}
+
+/* form {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+} */
+
+.usersname-label , .passwordCheck-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.SignIn-form{
+  margin-top: 20px;
+}
+
+.holder[type='text'],
+.passwordd-input[type='password'] {
+  width: 101%;
+  padding: 9px 14px;
+  font-size: 14px;
+  border: 1px solid #1a4d2e4d;
+  border-radius: 4px;
+  margin: -17px;
+  position: relative;
+  bottom: -39px;
+}
+.passwordd-input::placeholder{
+  color: #A0BDAA;
+}
+.holder::placeholder
+{
+  color: #A0BDAA;
+}
+.SubmitB{
+  width: 73%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1a4d2e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+     /* margin-top: 20px; */
+     position: relative;
+     top: -9px;
+}
+.forgetPass{
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  color: #8B9690;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2px -32.75rem;
+  /* margin: 4px -0.25rem; */
+  position: relative;
+  /* text-align: right; */
+  right: -194px;
+  /* transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
+  top: -12px;
+}
+
+.CreateAcc {
+  margin-top: -2%; 
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    color: #8B9690;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px -32.75rem;
+    /* margin: 4px -0.25rem; */
+    position: relative;
+    /* text-align: right; */
+    right: -9px;
+    /* transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
+    top: -66px;
+}
+
+
+.forgetPass:hover,
+.CreateAcc:hover {
+  color: #cfc2c287;
+  border-radius: 15px;
+  box-shadow: inset 260px 0 0 0 #babec00f;
+}
+
+.grow-rectangle {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-color: #1A4D2E;
+  right: 0;
+  top: 0;
+  z-index: 0; /* Place the green rectangle behind other elements */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px; /* Add padding to the green rectangle */
+  box-sizing: border-box; /* Include padding in the width and height of the rectangle */
+}
+
+@media (max-width: 768px) {
+  .LoginCreation {
+    padding-right: 0;
+  }
+  .sort-container {
+    margin-top: 50px;
+  }
+  .about-all {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sort-container {
+    margin-top: 30px;
+  }
+  .about-all {
+    font-size: 24px;
+  }
+}

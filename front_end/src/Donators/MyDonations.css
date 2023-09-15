@@ -1,0 +1,495 @@
+
+div.container1 {
+  background: #F5F8F6;
+}
+
+div.container21 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 174px 10px;
+
+  max-height: 50%;
+  max-width: 90%;
+  margin-top: -60px;
+  z-index: -1;
+}
+
+div.buttons-container {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1515px;
+    left: 12px;
+    padding: 0px 10px;
+    background-color: white;
+    position: fixed;
+    width: 1490px;
+    top: 147px;
+}
+
+.b:hover {
+  opacity: 1;
+}
+
+.req {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 200px; /* Set a fixed height for the cards */
+  margin-top: 20px;
+  border: 0.51px solid rgb(238, 225, 225);
+  padding: 0 10px;
+  background: #e9f0eb;
+  border-radius: 15px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.req:hover {
+  transform: scale(1.02);
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+button.reject {
+  border-radius: 30px;
+  width: 80px;
+  height: 25px;
+  background: rgb(249, 249, 249);
+  margin-top: 24px;
+}
+
+.text2 {
+ 
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 3px;
+  color: #FFFFFF;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+section {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 140px 0;
+}
+
+.card {
+  position: relative;
+  background: #fbfdfc;
+  border-radius: 15px;
+  margin: 27px;
+  padding: 3px 53px;
+  height: 465px;
+  width: 291px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+  transform: translateZ(0);
+  overflow-x: auto;
+  animation-name: slidein, moveLeft300px, bounce;
+  animation-duration: 2.5s, 5s, 1s;
+  word-wrap: break-word;
+  
+}
+
+.card::-webkit-scrollbar {
+  width: 8px;   /* Set the width of the scroll bar */
+}
+
+.card::-webkit-scrollbar-track {
+  background-color: #8e9890;   /* Set the background color of the scroll bar track */
+}
+
+.card::-webkit-scrollbar-thumb {
+  background-color: #b2b4b2;   /* Set the color of the scroll bar thumb */
+}
+@keyframes slidein {
+  from {
+    margin-left: 15%;
+    width: 20%;
+  }
+}
+.card .donation-details {
+  word-wrap: break-word; /* Wrap content to the next line within the fixed width */
+}
+
+.card:hover {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.title h2 {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 0;
+  color: #333;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.donation-details {
+  color: #455543;
+  max-height: 250px;
+  word-wrap: break-word;
+}
+
+.status {
+  background-color: #1a4d2e;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color:white;
+  font: weight 400;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: -18px;
+  position: fixed;
+  left: 140px;
+  margin-top: -90px;
+  border-bottom: 4px solid #930b0b;
+  width: 130px;
+  height: 37px;
+  z-index: 1;
+}
+
+.filter-button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #7a172e;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 5px;
+  right: -18px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 99;
+  width: max-content;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  flex-direction: column-reverse;
+}
+
+.tag {
+  padding: 6px 12px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  font-size: 14px;
+
+  color: #8e9890;
+}
+
+.donation-summary {
+  color: #333c;
+}
+
+.expand-button {
+  border-radius: 15px;
+  margin-left: 300px;
+  margin-top: 0px;
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Roboto';
+}
+
+
+.page-arrow-left {
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 83px;
+  color: lightgray;
+  position: fixed;
+  
+}
+
+
+.page-arrow-right {
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 83px;
+  color: lightgray;
+  position: fixed;
+}
+
+
+.page-arrow-right:hover {
+  background-color: #111513;
+    color: #f5f5f5;
+}
+.page-arrow-left:hover {
+  background-color: #111513;
+  color: #f5f5f5;
+}
+
+.filter-container .filter-button {
+  position: relative;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  border: 2px solid #252525;
+  padding: 10px;
+  z-index: 99;
+  width: max-content;
+  display: none;
+  border-radius: 15px;
+}
+
+
+.filter-options {
+  border-top: 4px solid #930b0b;
+  border-bottom: 4px solid #930b0b;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.filter-options label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.AddNewButton{
+  z-index: 1;
+  right: 427px;
+    margin-top: -86px;
+  position: fixed;
+  width: 180px;
+  height: 36px;
+  border-radius: 9px;
+  background-color: #7a172ef0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.AddNewButtonHistory{
+  z-index: 1;
+  right: 330px;
+  margin-top: -86px;
+  position: fixed;
+  width: 180px;
+  height: 36px;
+  border-radius: 9px;
+  background-color: #7a172ef0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.DonatorChatPage{
+  z-index: 1;
+  right: 15px;
+  margin-top: -86px;
+  position: fixed;
+  width: 180px;
+  height: 36px;
+  border-radius: 9px;
+  background-color: #7a172ef0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.History{
+  z-index: 1;
+
+  right: 218px;
+  margin-top: -86px;
+  position: fixed;
+  width: 180px;
+  height: 36px;
+  border-radius: 9px;
+  background-color: #7a172ef0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.MyDonationsB{
+  z-index: 1;
+
+  right: 126px;
+  margin-top: -86px;
+  position: fixed;
+  width: 180px;
+  height: 36px;
+  border-radius: 9px;
+  background-color: #7a172ef0;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 89px;
+    z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    padding: 0px 9px;
+    border: none;
+  }
+  
+  .pagination button {
+    margin: 3px 7px;
+    padding: 5px 10px;
+    /* background-color: #930b0b; */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #343935;
+    font-size: 16px;
+  }
+
+  .pagination button :hover{
+    background-color: #343935;
+    color: #343935;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination button.active {
+    font-weight: bold;
+  }
+  
+.NGOhome{
+  max-height: 1000px;
+}
+
+
+.confirm-delete-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 23px;
+  padding: 20px;
+  width: 557px;
+  height: 215px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin: 48px;
+  font-size: 22px;
+
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.cancel{
+  background-color: #930b0b;
+  color: white;
+  padding: 10px 54px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  margin: 6px 28px;
+  font-size: 14px;
+}
+.confirm {
+  background-color: #184d0f;
+  color: white;
+  padding: 10px 54px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  margin: 6px 28px;
+  font-size: 14px;
+}
+
+.cancel:hover,
+.confirm:hover {
+  background-color: #cc0000;
+}

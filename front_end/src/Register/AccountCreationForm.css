@@ -1,0 +1,279 @@
+.account-creation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 320px; /* Adjust this value to match the width of the green rectangle */
+  text-align: center;
+  height: 713px; /* Set the height to 100% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds viewport height */
+  position: relative; /* Add relative positioning */
+}
+
+.logo-image {
+  max-width: 200px;
+  max-height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.account-creation-form h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  padding-top: 30px;
+  color:#96ddb2;
+}
+
+.account-creation-form form {
+  margin-top: 20px;
+}
+
+.account-creation-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.account-creation-form input[type='text'],
+.account-creation-form input[type='email'],
+.account-creation-form input[type='password'] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #96ddb2;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out; /* Added transition effect */
+}
+
+
+
+.account-creation-form input[type='file'] {
+  margin-top: 10px;
+}
+
+.register-button {
+  padding: 8px 25px;
+  font-size: 16px;
+  background-color: #1a4d2e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+  top: -9px;
+}
+.register-button:hover {
+  background-color: #96ddb2; /* Change the background color on hover */
+}
+
+.register-green-rectangle {
+  position: absolute;
+  width: 300px; /* Adjusted to leave space for padding */
+  height: 125vh; /* Set the height to 100% of the parent container */
+  background-color: #1a4d2e;
+  right: 0;
+  top:0; /* Set the top position to 0 */
+  bottom:0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-right: none; /* Remove the right border */
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 6px;
+  bottom: -8px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #1a4d2e;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+.user-type-label {
+  border: 1px solid #96ddb2;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+  text-align: left; 
+}
+
+
+.user-type-label input[value] {
+  margin-right: 61px;
+}
+
+.user-type-label input {
+  margin-right: 30px;
+  position: relative;
+  right: -56px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Additional Styles for Scalable Borders */
+
+.form-container,
+.account-creation-form input[type='text'],
+.account-creation-form input[type='email'],
+.account-creation-form input[type='password'],
+.user-type-label {
+  width: 100%;
+  max-width: 570px;
+  box-sizing: border-box;
+  margin-bottom: -7px;
+  height: 40px; /* Add a fixed height to all boxes */
+}
+
+.account-creation-form input[type='text'],
+.account-creation-form input[type='email'],
+.account-creation-form input[type='password'],
+.user-type-label {
+  border-width: 2px;
+}
+
+@media (max-width: 600px) {
+  .account-creation-form {
+    padding-right: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .green-rectangle {
+    width: 100%; /* Adjusted width for smaller screens */
+  }
+
+  .form-container,
+  input[type='text'],
+  input[type='email'],
+  input[type='password'],
+  .user-type-label {
+    max-width: 100%;
+  }
+}
+
+.file-input-label {
+  display: flex;
+  align-items: center;
+  border: 2px solid #96ddb2;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.file-input-icon {
+  margin-right: 8px;
+}
+
+.file-input-icon i {
+  color: #96ddb2;
+}
+
+.file-input-text {
+  color: #96ddb2;
+}
+
+.file-input {
+  display: none;
+}
+
+/* Add hover effect */
+.file-input-label:hover {
+  background-color: #96ddb2;
+  color: #fff;
+}
+
+.file-input-label:hover .file-input-icon i {
+  color: #fff;
+}
+
+.file-input-label:hover .file-input-text {
+  color: #fff;
+}
+.user-type-label span {
+  margin-right: 10px;
+}
+
+.user-type-label label input[type="radio"] {
+  margin-right: 5px;
+}
+
+.password-mismatch-mark {
+  color: red;
+}
+
+.link-btn{
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #8B9690;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2px -32.75rem;
+  position: relative;
+  right: 2px;
+  top: 1px;
+  text-decoration: underline;
+
+}
+
+.link-btn:hover {
+  color: #cfc2c287;
+  border-radius: 15px;
+  box-shadow: inset 260px 0 0 0 #babec00f;
+}

@@ -1,0 +1,311 @@
+.ngo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -27px;
+}
+
+.ngo-donations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1353px;
+  margin-top: 20px;
+}
+.ngo-button {
+  background-color: #f8f8f8;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.ngo-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  width: 94%;
+  margin-top: 40px;
+  border-radius: 11px;
+}
+
+.ngo-buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.ngo-search-container {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.ngo-search-container input {
+  width: 18%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.ngo-button.active {
+  background-color:#1A4D2E;
+  color: white;
+}
+.ngo-donation {
+  position: relative;
+  background: #fafafa;
+  border-radius: 15px;
+  margin: 27px;
+  padding: 3px 53px;
+  height: 465px;
+  width: 291px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+  transform: translateZ(0);
+  overflow-x: hidden;
+ /* animation-name: slidein, moveLeft300px, bounce;
+  animation-duration: 2.5s, 5s, 1s;*/
+  word-wrap: break-word;
+}
+.ngo-donation::-webkit-scrollbar {
+  width: 8px;   /* Set the width of the scroll bar */
+}
+.ngo-donation::-webkit-scrollbar-track {
+  background-color: #8e9890;   /* Set the background color of the scroll bar track */
+}
+.ngo-donation::-webkit-scrollbar-thumb {
+  background-color: #b2b4b2;   /* Set the color of the scroll bar thumb */
+}
+@keyframes slidein {
+  from {
+    margin-left: 15%;
+    width: 20%;
+  }
+}
+.ngo-donation.donation-details {
+  word-wrap: break-word; /* Wrap content to the next line within the fixed width */
+}
+
+.ngo-donation:hover {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+.ngo-donation:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ngo-donation-name {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ngo-donation-description {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ngo-donation-price {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ngo-request-button {
+  background-color: #1A4D2E;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 101px;
+  position: relative;
+  bottom: -120px;
+}
+
+
+
+@media (max-width: 768px) {
+  .ngo-donation {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+h2.DonatorName{
+
+  position: relative;
+  right: 22px;
+  bottom: -15px;
+
+}
+
+.DonationDate{
+  size: 10px;
+  font-size: 15px;
+  position: relative;
+  right: -173px;
+  bottom: -107px;
+  font-style: italic;
+  /* font-size: 14px; */
+  font-weight: 600;
+
+}
+.NGOdonation-summary{
+  position: relative;
+    bottom: 55px;
+    height: 0px;
+}
+
+.DonatorDN{
+word-wrap: break-word;
+position: relative;
+bottom: -65px;
+
+}
+
+.DonationName{
+  word-wrap: break-word;
+  
+  position: relative;
+  font-size: 34px;
+  border-bottom: 4px solid black;
+  border-radius: 7px;
+  
+  width: 304px;
+
+}
+
+.paginationNGO{
+  display: flex;
+  justify-content: center;
+  margin-top: -65px;
+  z-index: 1;
+  position: absolute;
+  border: none;
+}
+
+.paginationNGO button {
+  margin: 3px 7px;
+  padding: 5px 10px;
+  /* background-color: #930b0b; */
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #343935;
+  font-size: 16px;
+}
+
+.paginationNGO button :hover{
+  background-color: #343935;
+  color: #343935;
+}
+
+.paginationNGO button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationNGO button.active {
+  font-weight: bold;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.popup-content {
+  /* position: relative; */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.popup-content h3 {
+  margin-bottom: 10px;
+}
+
+.popup-buttons {
+  /* position: absolute; */
+  bottom: 0;
+  right: 0;
+  margin-top: 20px;
+}
+
+.popup-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.no-donations-message{
+  position: relative;
+    bottom: -180px;
+    font-size: 28px;
+    border: 2px solid black;
+    padding: 68px 68px;
+    border-radius: 91px;
+    border-block-style: initial;
+    border-color: #d64e4b;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.MyRequests{
+  z-index: 0;
+  right: 117px;
+  margin-top: -18px;
+  position: absolute;
+  width: 212px;
+  height: 36px;
+  border-radius: 9px;
+  background-color: #7a172ef0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.MyChat{
+  z-index: 0;
+  right: 360px;
+  margin-top: -18px;
+  position: absolute;
+  width: 212px;
+  height: 36px;
+  border-radius: 9px;
+  background-color: #7a172ef0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.requestStatus {
+  color: #ffffffe6;
+  background-color: #7d2438;
+  padding: 4px 99px;
+  border-radius: 8px;
+  width: 100px;
+}

@@ -1,0 +1,20 @@
+
+.navbarpage-logo-imageUS {
+  position: absolute;
+  width: 229px;
+  height: 95px;
+  left: 45px;
+  top: -10px;
+}
+
+
+.aboutusnavbar-Home-button{
+  background: transparent;
+  position: relative;
+  right: 36px;
+  border: none;
+  font-size: 34px;
+  color: #d64e4b;
+  top: 6px;
+
+}
